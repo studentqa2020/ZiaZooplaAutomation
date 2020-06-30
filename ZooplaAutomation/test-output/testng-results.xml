@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19762" started-at="2020-06-29T00:01:22Z" finished-at="2020-06-29T00:01:41Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19762" started-at="2020-06-29T00:01:22Z" finished-at="2020-06-29T00:01:41Z">
+      <class name="com.smoke.test.SanityTestNG">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.smoke.test.SanityTestNG@1d082e88]" name="setup" is-config="true" duration-ms="11003" started-at="2020-06-29T00:01:22Z" finished-at="2020-06-29T00:01:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getProperty()[pri:0, instance:com.smoke.test.SanityTestNG@1d082e88]" name="getProperty" duration-ms="5064" started-at="2020-06-29T00:01:33Z" finished-at="2020-06-29T00:01:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProperty -->
+        <test-method status="PASS" signature="getAgent()[pri:0, instance:com.smoke.test.SanityTestNG@1d082e88]" name="getAgent" duration-ms="2821" started-at="2020-06-29T00:01:38Z" depends-on-methods="com.smoke.test.SanityTestNG.getProperty" finished-at="2020-06-29T00:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAgent -->
+        <test-method status="PASS" signature="tearOff()[pri:0, instance:com.smoke.test.SanityTestNG@1d082e88]" name="tearOff" is-config="true" duration-ms="855" started-at="2020-06-29T00:01:41Z" finished-at="2020-06-29T00:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearOff -->
+      </class> <!-- com.smoke.test.SanityTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

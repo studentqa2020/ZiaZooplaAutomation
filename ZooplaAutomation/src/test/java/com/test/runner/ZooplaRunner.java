@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //"./src/main/resources/flightFinder.feature"},
 @CucumberOptions(
 //		features = {"src/main/resources/NewToursDemoLogin.feature"},
-		features = {"features/zoopla2.feature"},
+		features = {"features/zoopla.feature"},
 		glue = {"com.step.def"},
 		plugin = {"pretty", "html:target" , "json:target/cucumber.json" , 
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, 

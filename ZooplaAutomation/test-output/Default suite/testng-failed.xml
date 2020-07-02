@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.smoke.test.SanityTestNG">
+      <class name="com.test.runner.ZooplaRunner">
         <methods>
-          <include name="getAgent"/>
-          <include name="setup"/>
-          <include name="getProperty"/>
-          <include name="tearOff"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.smoke.test.SanityTestNG -->
+      </class> <!-- com.test.runner.ZooplaRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

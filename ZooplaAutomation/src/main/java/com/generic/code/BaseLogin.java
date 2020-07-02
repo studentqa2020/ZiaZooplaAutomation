@@ -34,7 +34,7 @@ public class BaseLogin {
 		
 		driver.manage().window().maximize();
 		driver.get(BaseConfig.getConfig("URL"));
-				
+		ScreenShot.emptyScreenShotFolder();
 		login.getAcceptCookie().click();
 
 		Highlighter.getcolor(driver, login.getSignInBtn());				

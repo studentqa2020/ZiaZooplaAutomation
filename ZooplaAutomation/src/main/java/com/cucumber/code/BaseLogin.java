@@ -25,7 +25,8 @@ public class BaseLogin {
 		login = new LoginPage(driver);
 	}
 	
-	public void openUrl() throws Throwable {		
+	public void openUrl() throws Throwable {
+		ScreenShot.emptyScreenShotFolder();
 		driver.get(BaseConfig.getConfig("URL"));
 	}
 	

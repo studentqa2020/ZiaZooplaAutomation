@@ -16,9 +16,11 @@ public class AgentInfoPage {
 	private WebElement agentName;
 	@FindBy(xpath="(//*[@class='ui-link'])[4]")
 	private WebElement agentPhoneNum;
-	@FindBy(xpath="//*[@id='header-account-panel__signed-in-link']")
+	//@FindBy(xpath="//*[@id='header-account-panel__signed-in-link']")
+	@FindBy(xpath="//*[@class='css-1mjljx5 eson0er0']//*[text()='My Zoopla']")
 	private WebElement myZooplaBtn;
-	@FindBy(xpath="//span[contains(text(),'Sign out')]")
+	//@FindBy(xpath="//span[contains(text(),'Sign out')]")
+	@FindBy(xpath="(//div[@content='Sign out'])[1]")
 	private WebElement signOutBtn;
 	
 	public WebElement getPropertyLogo() {

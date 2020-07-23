@@ -21,7 +21,7 @@ public class ScreenShot {
 //		src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //		FileUtils.copyFile(src,new File(fileName));
 		File dir;
-		TakesScreenshot ts = (TakesScreenshot) driver;
+		TakesScreenshot ts = (TakesScreenshot) driver;  //type cast
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
 		DateFormat dateFormat = new SimpleDateFormat("yyyy_MM_dd_HH_mm_ss");

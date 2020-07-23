@@ -35,10 +35,12 @@ public class BaseLogin {
 		driver.manage().window().maximize();
 		driver.get(BaseConfig.getConfig("URL"));
 		ScreenShot.emptyScreenShotFolder();
+		
 		login.getAcceptCookie().click();
 
 		Highlighter.getcolor(driver, login.getSignInBtn());				
 		ScreenShot.getScreenShot(driver, "SignInPage");
+//		driver.findElement(By.xpath("//a[@class='button button--tertiary-dark account-link__text']")).click();
 		login.getSignInBtn().click();
 		
 		new ExplicitWait().getExplicitWait(driver, login.getEmail());

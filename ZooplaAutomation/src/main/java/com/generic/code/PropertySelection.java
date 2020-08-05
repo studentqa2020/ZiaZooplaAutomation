@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -47,8 +48,9 @@ public class PropertySelection {
 		
 		// select 5th property
 		//new ExplicitWait().getExplicitWaitVisible(driver, propertypf.getHomePrices().get(4));
-		new ExplicitWait().getExplicitWait(driver, propertypf.getHomePrices().get(4));
-		propertypf.getHomePrices().get(4).click();		
+	//	new ExplicitWait().getExplicitWait(driver, propertypf.getHomePrices().get(4));
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", propertypf.getHomePrices().get(4));
+	//	propertypf.getHomePrices().get(4).click();		
 		
 	}
 }

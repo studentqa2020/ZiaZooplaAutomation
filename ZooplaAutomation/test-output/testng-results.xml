@@ -1,40 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27686" started-at="2020-08-02T14:27:22Z" finished-at="2020-08-02T14:27:50Z">
+  <suite name="Default suite" duration-ms="25238" started-at="2020-08-11T00:47:52Z" finished-at="2020-08-11T00:48:18Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.test.runner.ZooplaRunner@d706f19]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="27686" started-at="2020-08-02T14:27:22Z" finished-at="2020-08-02T14:27:50Z">
-      <class name="com.test.runner.ZooplaRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.test.runner.ZooplaRunner@d706f19]" name="setUpClass" is-config="true" duration-ms="105" started-at="2020-08-02T14:27:22Z" finished-at="2020-08-02T14:27:23Z">
+    <test name="Default test" duration-ms="25238" started-at="2020-08-11T00:47:52Z" finished-at="2020-08-11T00:48:18Z">
+      <class name="com.smoke.test.SanityTestNG">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.smoke.test.SanityTestNG@7692d9cc]" name="setup" is-config="true" duration-ms="15521" started-at="2020-08-11T00:47:52Z" finished-at="2020-08-11T00:48:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.test.runner.ZooplaRunner@d706f19]" name="runScenario" duration-ms="27478" started-at="2020-08-02T14:27:23Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-08-02T14:27:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Search Property"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Zoopla Automation"]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="getProperty()[pri:0, instance:com.smoke.test.SanityTestNG@7692d9cc]" name="getProperty" duration-ms="5014" started-at="2020-08-11T00:48:08Z" finished-at="2020-08-11T00:48:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.test.runner.ZooplaRunner@d706f19]" name="tearDownClass" is-config="true" duration-ms="62" started-at="2020-08-02T14:27:50Z" finished-at="2020-08-02T14:27:50Z">
+        </test-method> <!-- getProperty -->
+        <test-method status="PASS" signature="getAgent()[pri:0, instance:com.smoke.test.SanityTestNG@7692d9cc]" name="getAgent" duration-ms="3866" started-at="2020-08-11T00:48:13Z" depends-on-methods="com.smoke.test.SanityTestNG.getProperty" finished-at="2020-08-11T00:48:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownClass -->
-      </class> <!-- com.test.runner.ZooplaRunner -->
+        </test-method> <!-- getAgent -->
+        <test-method status="PASS" signature="tearOff()[pri:0, instance:com.smoke.test.SanityTestNG@7692d9cc]" name="tearOff" is-config="true" duration-ms="822" started-at="2020-08-11T00:48:17Z" finished-at="2020-08-11T00:48:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearOff -->
+      </class> <!-- com.smoke.test.SanityTestNG -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
